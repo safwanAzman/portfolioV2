@@ -63,7 +63,7 @@ function App() {
           <div className="relative col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-6 xxl:col-span-6 bg-center bg-cover "
             style={{ backgroundImage: `url(${Bg})` }}>
               <div className="px-4 lg:px-24 py-5 flex flex-col justify-center h-full md:h-screen">
-                  <h1 className="-ml-2 text-5xl font-bold text-white md:text-9xl myfont">SAFWAN</h1>
+                  <h1 className="-ml-2 text-5xl font-bold text-white md:text-8xl myfont">SAFWAN</h1>
                   <h1 className="text-2xl font-semibold text-teal-200 md:text-4xl">Junior Front-end Web Developer</h1>
                   <div className="my-4">
                     <div className="flex items-center mb-2">
