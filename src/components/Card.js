@@ -13,7 +13,7 @@ export default function Card({href , src ,title , subtitle , icon ,target}) {
             href={href} 
             rel="noreferrer" 
             target={target}
-            className="relative w-full p-2 my-4 overflow-hidden bg-transparent border-4 rounded-lg shadow-2xl border-teal-200">
+            className="transform  hover:scale-105 transition duration-300 relative w-full p-2 my-4 overflow-hidden bg-transparent border-4 rounded-lg shadow-2xl border-teal-200">
             <img className="object-center bg-center bg-cover w-full h-56 rounded-lg" src={src} alt="avatar" />
             <div className="pt-4 my-2 flex justify-between items-center border-t-2 border-teal-200 mt-4">
             <div>
