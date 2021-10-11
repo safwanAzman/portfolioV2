@@ -292,7 +292,6 @@ function App() {
       <section id="portfolio" className="flex justify-center w-full h-full px-32 py-12 bg-black bg-fixed bg-center bg-cover"
         style={{ backgroundImage: `url(https://c.tenor.com/s03JP-Y_wiAAAAAC/smoke-teal.gif)` }}
       >
-        <Fade left>
           <div className="flex justify-center w-full">
             <div className="container relative grid items-center justify-center grid-cols-12 gap-6 ">
               <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-12 xxl:col-span-12">
@@ -400,7 +399,6 @@ function App() {
               </div>
             </div>
           </div>
-        </Fade>
       </section>
 
       
