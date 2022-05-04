@@ -1,10 +1,10 @@
 
-import React from 'react';
+import React , {useState,useEffect} from 'react';
 import './App.css';
 import './index.css';
-import Me from './assets/me.JPG';
+import Me from './assets/me1.JPG';
 import About from './assets/about.png';
-import Bg from './assets/bg.gif';
+// import Bg from './assets/bg.gif';
 
 //skill import
 import Html from './assets/html.png';
@@ -17,19 +17,6 @@ import Reactjs from './assets/skills/react.png';
 import Livewire from './assets/skills/livewire.png';
 import Alpine from './assets/skills/alpinejs.svg';
 
-//work import
-import azzahra from './assets/work/azzahra.png';
-import kasihgold from './assets/work/kasihgold.png';
-import csccovid from './assets/work/csccovid.png';
-import mycomponent from './assets/work/mycomponent.png';
-import room from './assets/work/homepage.png';
-import efms from './assets/work/efms.png';
-import emandate from './assets/work/emandate.png';
-import blogr from './assets/work/blogr.png';
-import todo from './assets/work/todo.png';
-import arrahnu from './assets/work/arrahnu.png';
-import csctestkit from './assets/work/csctestkit.png';
-import jomskate from './assets/work/jomskate.png';
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {library} from "@fortawesome/fontawesome-svg-core"; 
@@ -48,64 +35,77 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import Header from './components/Header';
-import Card from './components/Card'
+
+import Freelancers from '././components/portfolio/Freelancers';
+import Work from '././components/portfolio/Work';
+import Hobby from '././components/portfolio/Hobby';
+
 
 
 library.add(fas,fab);
 
 function App() {
   const notify = () => toast.success("Thank You!!");
-  return (
-    <div>
-        <Header/>
-        <section className="relative grid grid-cols-12 gap-0 h-screen bg-fixed bg-black ">
-        <Zoom left>
-          <div className="relative col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-6 xxl:col-span-6 bg-center bg-cover "
-            style={{ backgroundImage: `url(${Bg})` }}>
-              <div className="px-4 lg:px-24 py-5 flex flex-col justify-center h-full md:h-screen">
-                  <h1 className="-ml-2 text-5xl font-bold text-white md:text-8xl myfont">SAFWAN</h1>
-                  <h1 className="text-2xl font-semibold text-teal-200 md:text-4xl">Junior Front-end Web Developer</h1>
-                  <div className="my-4">
-                    <div className="flex items-center mb-2">
-                      <FontAwesomeIcon icon={["fas", "street-view"]} color="#9CA3AF" size="lg" />
-                      <h1 className="ml-4 text-lg text-gray-400">Kajang,Selangor,Malaysia</h1>
-                    </div>
+  const [tab , setTab] = useState(1);
+  const [yearWork, setYearWork] = useState(null);
+  const [hourWork , setHourWork] = useState(null);
+  useEffect(() => {
+    setYearWork(new Date().getFullYear() - 2020);
+    setHourWork(yearWork * 8765);
+  }, [yearWork, hourWork]);
 
-                    <div className="flex items-center">
-                      <FontAwesomeIcon icon={["fas", "envelope"]} color="#9CA3AF" size="lg" />
-                      <h1 className="ml-4 text-lg text-gray-400">safwanazman017@gmail.com</h1>
-                    </div>
+  return (
+    <div className="overflow-x-hidden scroll-smooth">
+        <Header/>
+        <section className="relative grid h-screen grid-cols-12 gap-0 bg-fixed bg-black ">
+          <Zoom left>
+            <div className="relative col-span-12 bg-center bg-cover sm:col-span-12 md:col-span-12 lg:col-span-6 xxl:col-span-6 "
+              style={{ backgroundImage: `url('https://i.pinimg.com/originals/2b/2c/a2/2b2ca2eed38b53a7c09e586911f9630e.gif')` }}>
+                <div className="h-full bg-black bg-opacity-70 md:h-screen">
+                  <div className="flex flex-col justify-center h-full px-6 py-5 lg:px-24 md:h-screen">
+                      <h1 className="-ml-2 text-5xl font-bold text-white md:text-8xl myfont">SAFWAN</h1>
+                      <h1 className="text-2xl font-semibold text-teal-200 md:text-4xl">Front-end Developer</h1>
+                      <div className="my-4">
+                        <div className="flex items-center mb-2">
+                          <FontAwesomeIcon icon={["fas", "street-view"]} color="#9CA3AF" size="lg" />
+                          <h1 className="ml-4 text-lg text-gray-400">Kajang,Selangor,Malaysia</h1>
+                        </div>
+
+                        <div className="flex items-center">
+                          <FontAwesomeIcon icon={["fas", "envelope"]} color="#9CA3AF" size="lg" />
+                          <h1 className="ml-4 text-lg text-gray-400">safwanazman017@gmail.com</h1>
+                        </div>
+                      </div>
+                      <div className="py-6">
+                        <a href="#contact" className="px-6 py-4 text-lg font-bold text-teal-200 uppercase border-2 border-teal-200 rounded-lg shadow-xl">
+                          Contact Me
+                        </a>
+                      </div>
                   </div>
-                  <div className="py-6">
-                    <a href="#contact" className="px-6 py-4 text-lg font-bold text-teal-200 uppercase border-2 border-teal-200 rounded-lg shadow-xl">
-                      Contact Me
+                  
+                <div className="absolute top-0 right-0 z-40 py-6 ">
+                    <a href="https://github.com/safwanAzman" className="flex items-center px-2 py-2 border-2 border-teal-200 hover:bg-teal-200">
+                        <FontAwesomeIcon icon={["fab", "github"]} color="white" size="lg" />
                     </a>
-                  </div>
+                    <a href="https://twitter.com/sfwn_azmn" className="flex items-center px-2 py-2 border-2 border-teal-200 hover:bg-teal-200">
+                      <FontAwesomeIcon icon={["fab", "twitter"]} color="white" size="lg" />
+                    </a>
+                    <a href="https://www.instagram.com/safwn_/" className="flex items-center px-2 py-2 border-2 border-teal-200 hover:bg-teal-200">
+                      <FontAwesomeIcon icon={["fab", "instagram"]} color="white" size="lg" />
+                    </a>
+                    <a href="mailto:safwanazman017@gmail.com?subject" className="flex items-center px-2 py-2 border-2 border-teal-200 hover:bg-teal-200">
+                      <FontAwesomeIcon icon={["fas", "envelope"]} color="white" size="lg" />
+                    </a>
+                </div>
               </div>
-            
-            <div className="absolute top-0 right-0 z-40 py-6 ">
-                <a href="https://github.com/safwanAzman" className="flex items-center px-2 py-2 border-2 border-teal-200 hover:bg-teal-200">
-                    <FontAwesomeIcon icon={["fab", "github"]} color="white" size="lg" />
-                </a>
-                <a href="https://twitter.com/sfwn_azmn" className="flex items-center px-2 py-2 border-2 border-teal-200 hover:bg-teal-200">
-                  <FontAwesomeIcon icon={["fab", "twitter"]} color="white" size="lg" />
-                </a>
-                <a href="https://www.instagram.com/safwn_/" className="flex items-center px-2 py-2 border-2 border-teal-200 hover:bg-teal-200">
-                  <FontAwesomeIcon icon={["fab", "instagram"]} color="white" size="lg" />
-                </a>
-                <a href="mailto:safwanazman017@gmail.com?subject" className="flex items-center px-2 py-2 border-2 border-teal-200 hover:bg-teal-200">
-                  <FontAwesomeIcon icon={["fas", "envelope"]} color="white" size="lg" />
-                </a>
             </div>
-          </div>
           </Zoom>
           <Zoom top>
-          <div className="mx-0 my-0 md:mx-6 md:my-4 p-12 relative col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-6 xxl:col-span-6
-            bg-cover bg-center"
+          <div className="relative col-span-12 p-12 mx-0 my-0 -mt-4 bg-center bg-cover md:ml-6 sm:col-span-12 md:col-span-12 lg:col-span-6 xxl:col-span-6"
             style={{ backgroundImage: `url(${Me})` }}
             >
-            <div className="absolute inset-0 bg-gray-900 bg-opacity-50 transition duration-300 ease-in-out">
-              <div className="flex flex-col px-2 justify-center md:px-0 md:justify-end h-full">
+            <div className="absolute inset-0 transition duration-300 ease-in-out bg-black bg-opacity-30">
+              <div className="flex flex-col justify-center h-full px-2 md:px-0 md:justify-end">
                 <div className="grid items-center grid-cols-2">
                   <div className="flex justify-center px-4 py-4 bg-teal-200 shadow-xl">
                     <div>
@@ -113,8 +113,8 @@ function App() {
                         <FontAwesomeIcon icon={["fas", "laptop-code"]} color="#ffffff" size="3x" />
                       </div>
                       <div className="mt-4">
-                        <h1 className="text-4xl text-center myfont text-white">2</h1>
-                        <h1 className="text-sm text-center myfont text-white md:text-lg">Year of Experience</h1>
+                        <h1 className="text-4xl text-center text-white myfont">{yearWork}</h1>
+                        <h1 className="text-sm text-center text-white myfont md:text-lg">Year of Experience</h1>
                       </div>
                     </div>
                   </div>
@@ -124,8 +124,8 @@ function App() {
                           <FontAwesomeIcon icon={["fas", "clock"]} color="#30d5c8" size="3x"/>
                         </div>
                         <div className="mt-4"> 
-                          <h1 className="text-4xl text-center myfont text-teal-200">17520</h1>
-                          <h1 className="text-sm text-center myfont text-teal-200 md:text-lg">Hour of Work</h1>
+                          <h1 className="text-4xl text-center text-teal-200 myfont">{hourWork}</h1>
+                          <h1 className="text-sm text-center text-teal-200 myfont md:text-lg">Hour of Work</h1>
                         </div>
                       </div>
                   </div>
@@ -136,7 +136,7 @@ function App() {
           </Zoom>
         </section>
 
-        <section id="about" className="flex justify-center w-full h-full bg-black pt-4 bg-fixed bg-center bg-cover " 
+        <section id="about" className="flex justify-center w-full h-full pt-4 bg-fixed bg-black bg-center bg-cover " 
         style={{ backgroundImage: `url(https://c.tenor.com/s03JP-Y_wiAAAAAC/smoke-teal.gif)` }}>
             <div className="container flex items-center justify-start w-full mx-32">
               <div className="">
@@ -168,7 +168,7 @@ function App() {
               <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-12 xxl:col-span-12">
                 <h1 className="mb-4 text-4xl font-bold text-white myfont">TECHNICAL <span className="text-teal-200">SKILLS</span></h1>
               </div>
-                <div className="py-16 col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-6 xxl:col-span-6 overflow-y-hidden">
+                <div className="col-span-12 py-16 overflow-y-hidden sm:col-span-12 md:col-span-12 lg:col-span-6 xxl:col-span-6">
                     <div className="box">
                       <span className="box1">
                         <img 
@@ -208,7 +208,7 @@ function App() {
                       <span className="box6">
                         <img 
                           src={Reactjs} 
-                          className=" p-4 rounded-lg shadow-xl"
+                          className="p-4 rounded-lg shadow-xl "
                           alt="React" 
                         />
                       </span>
@@ -289,112 +289,65 @@ function App() {
       </section>
 
 
-      <section id="portfolio" className="flex justify-center w-full h-full px-32 py-12 bg-black bg-fixed bg-center bg-cover"
+      <section id="portfolio" className="flex justify-center w-full h-full px-32 py-12 bg-fixed bg-black bg-center bg-cover"
         style={{ backgroundImage: `url(https://c.tenor.com/s03JP-Y_wiAAAAAC/smoke-teal.gif)` }}
       >
           <div className="flex justify-center w-full">
-            <div className="container relative grid items-center justify-center grid-cols-12 gap-6 ">
+            <div className="container relative grid items-center justify-center grid-cols-12 gap-8 ">
               <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-12 xxl:col-span-12">
                 <h1 className="mb-4 text-4xl font-bold text-teal-200 myfont">MY <span className="text-white">PORTFOLIO</span></h1>
                 <div>
-                    <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-2">
-                      <Card
-                        href="https://www.myazzahra.com/portal/"
-                        target="_blank"
-                        src={azzahra}
-                        title="Azzahra portal"
-                        subtitle="Laravel & Bootstrap"
-                        icon="eye"
-                      />
-                      <Card
-                        href="https://cscabs.net.my/kasihgold"
-                        target="_blank"
-                        src={kasihgold}
-                        title="Kasih Gold"
-                        subtitle="Tall Stack"
-                        icon="eye"
-                      />
-                      <Card
-                        href="https://cscabs.net.my/covid/"
-                        target="_blank"
-                        src={csccovid}
-                        title="Covid Report"
-                        subtitle="Laravel & Tailwindcss"
-                        icon="eye"
-                      />
-                      <Card
-                        href="#"
-                        target=""
-                        src={efms}
-                        title="Cscorp"
-                        subtitle="Tall Stack"
-                        icon="eye-slash"
-                      />
-                      <Card
-                        href="https://frontend-mentor-room-home-page.vercel.app/"
-                        target="_blank"
-                        src={room}
-                        title="Room Home Page"
-                        subtitle="React & Tailwindcss"
-                        icon="eye"
-                      />
-                      <Card
-                        href="https://fmsonline.tekun.gov.my/emandateV2"
-                        target="_blank"
-                        src={emandate}
-                        title="Emandate"
-                        subtitle="Tall Stack"
-                        icon="eye"
-                      />
-                      <Card
-                        href="https://tailwindcomponents.com/u/safwanazman"
-                        target="_blank"
-                        src={mycomponent}
-                        title="My Component"
-                        subtitle="Tailwindcss"
-                        icon="eye"
-                      />
-                      <Card
-                        href="https://blogr-landing-page-pearl.vercel.app/"
-                        target="_blank"
-                        src={blogr}
-                        title="Blogr Page"
-                        subtitle="React & Tailwindcss"
-                        icon="eye"
-                      />
-                      <Card
-                        href="http://175.144.132.172/arrahnu/"
-                        target="_blank"
-                        src={arrahnu}
-                        title="Arrahnu"
-                        subtitle="Tall Stack"
-                        icon="eye"
-                      />
-                      <Card
-                        href="https://todolist.safwan-azman.ml/"
-                        target="_blank"
-                        src={todo}
-                        title="Todo List"
-                        subtitle="React & Tailwindcss"
-                        icon="eye"
-                      />
-                      <Card
-                        href="#"
-                        target=""
-                        src={csctestkit}
-                        title="Csc Testkit"
-                        subtitle="React Native"
-                        icon="eye-slash"
-                      />
-                      <Card
-                        href="#"
-                        target=""
-                        src={jomskate}
-                        title="Jom Skate"
-                        subtitle="React Native"
-                        icon="eye-slash"
-                      />
+                  <div className='overflow-x-auto '>
+                    <div className="grid grid-cols-3 gap-2 mb-4 md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-2" style ={{ width : '28rem'}}>
+                        <button className={tab === 1 ? 
+                          'flex items-center justify-center p-4 space-x-2 text-white border-2 border-white rounded-md hover:bg-teal-200 bg-teal-200' :
+                          'flex items-center justify-center p-4 space-x-2 text-white border-2 border-white rounded-md hover:bg-teal-200 bg-transparent'}
+                          onClick={
+                            () => {
+                              setTab(1);
+                            }
+                          }>
+                          <FontAwesomeIcon icon={["fas", "laptop-code"]} color="#ffffff" />
+                          <p>Hobby</p>
+                        </button>
+                        <button className={tab === 2 ? 
+                          'flex items-center justify-center p-4 space-x-2 text-white border-2 border-white rounded-md hover:bg-teal-200 bg-teal-200' :
+                          'flex items-center justify-center p-4 space-x-2 text-white border-2 border-white rounded-md hover:bg-teal-200 bg-transparent'}
+                          onClick={
+                            () => {
+                              setTab(2);
+                            }
+                          }>
+                          <FontAwesomeIcon icon={["fas", "briefcase"]} color="#ffffff" />
+                          <p>Work</p>
+                        </button>
+                        <button className={tab === 3 ? 
+                          'flex items-center justify-center p-4 space-x-2 text-white border-2 border-white rounded-md hover:bg-teal-200 bg-teal-200' :
+                          'flex items-center justify-center p-4 space-x-2 text-white border-2 border-white rounded-md hover:bg-teal-200 bg-transparent'}
+                          onClick={
+                            () => {
+                              setTab(3);
+                            }
+                          }>
+                          <FontAwesomeIcon icon={["fas", "comments-dollar"]} color="#ffffff" />
+                          <p>Freelancer</p>
+                        </button>
+                      
                     </div>
+                  </div>
+                  <div className="px-4 md:px-0">
+                    <>
+                      {tab === 1 ? 
+                        <Hobby />
+                      : null }
+                      {tab === 2 ? 
+                      <Work />
+                      : null }
+                      {tab === 3 ? 
+                      <Freelancers />
+                      : null }
+                    </>
+                  </div>
                 </div>
               </div>
             </div>
