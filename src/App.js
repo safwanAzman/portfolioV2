@@ -151,7 +151,7 @@ function App() {
                         <h1 className="-ml-2 text-4xl font-bold text-teal-200 myfont">ABOUT <span className="text-white">ME</span></h1>
                         <p className="text-xl font-semibold text-white ">
                           I have a Diploma Digital Technology  from Politeknik Tuanku Syed Sirajuddin and have
-                          more than 2 years of experience as a junior front-end developer. I am skilled in all aspects of the job.
+                          more than {yearWork} years of experience as a junior front-end developer. I am skilled in all aspects of the job.
                           Besides developing original landing pages and templates, providing support to clients, and fixing 
                           any front-end related issues. 
                           </p>
