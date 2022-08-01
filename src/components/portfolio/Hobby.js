@@ -5,6 +5,7 @@ import Card from '../Card';
 import mycomponent from '../../assets/work/mycomponent.png';
 import room from '../../assets/work/homepage.png';
 import blogr from '../../assets/work/blogr.png';
+import snap from '../../assets/work/snap.png';
 import todo from '../../assets/work/todo.png';
 import jomskate from '../../assets/work/jomskate.png';
 
@@ -33,6 +34,14 @@ export default function Hobby() {
                 src={blogr}
                 title="Blogr Page"
                 subtitle="React & Tailwindcss"
+                icon="eye"
+            />
+            <Card
+                href="https://frontend-mentor-hero-section-hiffkt02m-safwanazman.vercel.app/"
+                target="_blank"
+                src={snap}
+                title="Snap Page"
+                subtitle="NextJs & Tailwindcss"
                 icon="eye"
             />
             <Card
