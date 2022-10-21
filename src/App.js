@@ -60,7 +60,7 @@ function App() {
         <section className="relative grid h-screen grid-cols-12 gap-0 bg-fixed bg-black ">
           <Zoom left>
             <div className="relative col-span-12 bg-center bg-cover sm:col-span-12 md:col-span-12 lg:col-span-6 xxl:col-span-6 "
-              style={{ backgroundImage: `url('http://31.media.tumblr.com/3b62e71ef618fff36381ca39e8c68392/tumblr_mqeo0dTJAU1spo3yuo1_500.gif')` }}>
+              style={{ backgroundImage: `url('https://i.pinimg.com/originals/2b/2c/a2/2b2ca2eed38b53a7c09e586911f9630e.gif')` }}>
                 <div className="h-full bg-black bg-opacity-70 md:h-screen">
                   <div className="flex flex-col justify-center h-full px-6 py-5 lg:px-24 md:h-screen">
                       <h1 className="-ml-2 text-5xl font-bold text-white md:text-8xl myfont">SAFWAN</h1>
