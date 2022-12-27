@@ -53,7 +53,7 @@ export default function Hobby() {
                 icon="eye"
             />
             <Card
-                href="https://apps.apple.com/my/app/jomskate/id1609835126"
+                href="https://www.jomskate.tk/"
                 target="_blank"
                 src={jomskate}
                 title="Jom Skate"
