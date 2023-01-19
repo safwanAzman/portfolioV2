@@ -60,7 +60,7 @@ function App() {
         <section className="relative grid h-screen grid-cols-12 gap-0 bg-fixed bg-black ">
           <Zoom left>
             <div className="relative col-span-12 bg-center bg-cover sm:col-span-12 md:col-span-12 lg:col-span-6 xxl:col-span-6 "
-              style={{ backgroundImage: `url('https://i.pinimg.com/originals/2b/2c/a2/2b2ca2eed38b53a7c09e586911f9630e.gif')` }}>
+              style={{ backgroundImage: `url('https://static01.nyt.com/images/2017/07/16/opinion/sunday/16wu/16wu-jumbo.gif')` }}>
                 <div className="h-full bg-black bg-opacity-70 md:h-screen">
                   <div className="flex flex-col justify-center h-full px-6 py-5 lg:px-24 md:h-screen">
                       <h1 className="-ml-2 text-5xl font-bold text-white md:text-8xl myfont">SAFWAN</h1>
@@ -101,7 +101,7 @@ function App() {
             </div>
           </Zoom>
           <Zoom top>
-          <div className="relative col-span-12 p-12 mx-0 my-0 -mt-4 bg-center bg-cover md:ml-6 sm:col-span-12 md:col-span-12 lg:col-span-6 xxl:col-span-6"
+          <div className="relative col-span-12 p-12 mx-0 my-0 -mt-4 bg-center bg-cover md:ml-2 sm:col-span-12 md:col-span-12 lg:col-span-6 xxl:col-span-6"
             style={{ backgroundImage: `url(${Me})` }}
             >
             <div className="absolute inset-0 transition duration-300 ease-in-out bg-black bg-opacity-30">
@@ -147,13 +147,16 @@ function App() {
                       </div>
                     </Fade>
                     <Fade right>
-                      <div className="col-span-12 py-5 sm:col-span-12 md:col-span-12 lg:col-span-6 xxl:col-span-6">
+                      <div className="col-span-12 py-0 lg:py-5 sm:col-span-12 md:col-span-12 lg:col-span-6 xxl:col-span-6 ">
                         <h1 className="-ml-2 text-4xl font-bold text-teal-200 myfont">ABOUT <span className="text-white">ME</span></h1>
-                        <p className="text-xl font-semibold text-white ">
-                          I have a Diploma Digital Technology  from Politeknik Tuanku Syed Sirajuddin and have
-                          more than {yearWork} years of experience as a front-end developer. I am skilled in all aspects of the job.
-                          Besides developing original landing pages and templates, providing support to clients, and fixing 
-                          any front-end related issues. 
+                        <p className="pb-10 mt-4 text-sm font-semibold text-white lg:text-xl lg:pb-0">
+                        I am a highly skilled Frontend Developer with a passion for creating visually stunning and intuitive user interfaces. 
+                        I have a strong background in HTML, CSS, and JavaScript, as well as experience with popular frontend frameworks such as React and laravel blade. 
+                        I have a keen eye for design and am well-versed in creating responsive layouts and cross-browser compatible web pages. 
+                        I am skilled in utilizing design software such as Figma and InVision to create mockups and wireframes. 
+                        I am also proficient in using CSS preprocessors and CSS frameworks such as Tailwindcss and Bootstrap. 
+                        I am a quick learner and am always eager to stay up-to-date with the latest frontend technologies and best practices.
+                        I am a team player and am able to work well under pressure, I am confident that I can bring value to any organization.
                           </p>
                       </div>
                     </Fade>
@@ -165,7 +168,7 @@ function App() {
         <section id="skills" className="flex justify-center w-full h-full px-32 py-12 bg-black">
           <div className="flex justify-center w-full">
             <div className="container relative grid items-center justify-center grid-cols-12 gap-6 ">
-              <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-12 xxl:col-span-12">
+              <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-12 xxl:col-span-12 ">
                 <h1 className="mb-4 text-4xl font-bold text-white myfont">TECHNICAL <span className="text-teal-200">SKILLS</span></h1>
               </div>
                 <div className="col-span-12 py-16 overflow-y-hidden sm:col-span-12 md:col-span-12 lg:col-span-6 xxl:col-span-6">
@@ -274,7 +277,7 @@ function App() {
                   <div className="pt-4">
                     <p className="text-lg font-semibold text-white">Front-end</p>
                     <div className="w-full bg-white shadow ">
-                      <div className="py-1 text-xs leading-none text-center text-white bg-teal-200" style={{ width: '60%' }}>60%</div>
+                      <div className="py-1 text-xs leading-none text-center text-white bg-teal-200" style={{ width: '70%' }}>70%</div>
                     </div>
                     <p className="pt-4 text-lg font-semibold text-white ">Back-end</p>
                     <div className="w-full bg-white shadow">
@@ -294,7 +297,7 @@ function App() {
       >
           <div className="flex justify-center w-full">
             <div className="container relative grid items-center justify-center grid-cols-12 gap-8 ">
-              <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-12 xxl:col-span-12">
+              <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-12 xxl:col-span-12 ">
                 <h1 className="mb-4 text-4xl font-bold text-teal-200 myfont">MY <span className="text-white">PORTFOLIO</span></h1>
                 <div>
                   <div className='overflow-x-auto '>
