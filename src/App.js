@@ -138,7 +138,7 @@ function App() {
 
         <section id="about" className="flex justify-center w-full h-full pt-4 bg-fixed bg-black bg-center bg-cover " 
         style={{ backgroundImage: `url(https://c.tenor.com/s03JP-Y_wiAAAAAC/smoke-teal.gif)` }}>
-            <div className="container flex items-center justify-start w-full mx-32">
+            <div className="container flex items-center justify-start w-full mx-12 lg:mx-32">
               <div className="">
                 <div className="container grid items-center justify-center grid-cols-12 gap-6">
                     <Fade left>
@@ -153,7 +153,7 @@ function App() {
                         I am a highly skilled Frontend Developer with a passion for creating visually stunning and intuitive user interfaces. 
                         I have a strong background in HTML, CSS, and JavaScript, as well as experience with popular frontend frameworks such as React and laravel blade. 
                         I have a keen eye for design and am well-versed in creating responsive layouts and cross-browser compatible web pages. 
-                        I am skilled in utilizing design software such as Figma and InVision to create mockups and wireframes. 
+                        I am skilled in utilizing design software such as Figma to create mockups and wireframes. 
                         I am also proficient in using CSS preprocessors and CSS frameworks such as Tailwindcss and Bootstrap. 
                         I am a quick learner and am always eager to stay up-to-date with the latest frontend technologies and best practices.
                         I am a team player and am able to work well under pressure, I am confident that I can bring value to any organization.
@@ -165,7 +165,7 @@ function App() {
             </div>
         </section>
 
-        <section id="skills" className="flex justify-center w-full h-full px-32 py-12 bg-black">
+        <section id="skills" className="flex justify-center w-full h-full px-10 py-12 bg-black lg:px-32">
           <div className="flex justify-center w-full">
             <div className="container relative grid items-center justify-center grid-cols-12 gap-6 ">
               <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-12 xxl:col-span-12 ">
@@ -292,7 +292,7 @@ function App() {
       </section>
 
 
-      <section id="portfolio" className="flex justify-center w-full h-full px-32 py-12 bg-fixed bg-black bg-center bg-cover"
+      <section id="portfolio" className="flex justify-center w-full h-full px-10 py-12 bg-fixed bg-black bg-center bg-cover lg:px-32"
         style={{ backgroundImage: `url(https://c.tenor.com/s03JP-Y_wiAAAAAC/smoke-teal.gif)` }}
       >
           <div className="flex justify-center w-full">
@@ -358,7 +358,7 @@ function App() {
       </section>
 
       
-      <section id="contact" className="flex justify-center w-full h-full px-32 py-12 bg-black">
+      <section id="contact" className="flex justify-center w-full h-full px-10 py-12 bg-black lg:px-32">
         <div className="flex justify-center w-full">
           <div className="container relative grid items-center justify-center grid-cols-12 gap-6 ">
             <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-12 xxl:col-span-12">
