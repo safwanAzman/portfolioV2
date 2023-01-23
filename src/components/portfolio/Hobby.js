@@ -37,7 +37,7 @@ export default function Hobby() {
                 icon="eye"
             />
             <Card
-                href="https://frontend-mentor-hero-section-hiffkt02m-safwanazman.vercel.app/"
+                href="https://frontend-mentor-hero-section.vercel.app/"
                 target="_blank"
                 src={snap}
                 title="Snap Page"
