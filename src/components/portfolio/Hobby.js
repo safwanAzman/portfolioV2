@@ -6,6 +6,7 @@ import mycomponent from '../../assets/work/mycomponent.png';
 import room from '../../assets/work/homepage.png';
 import blogr from '../../assets/work/blogr.png';
 import snap from '../../assets/work/snap.png';
+import calculator from '../../assets/work/calculator.png';
 import todo from '../../assets/work/todo.png';
 import jomskate from '../../assets/work/jomskate.png';
 
@@ -45,7 +46,15 @@ export default function Hobby() {
                 icon="eye"
             />
             <Card
-                href="https://todolist.safwan-azman.ml/"
+                href="https://calculator-app-eight-xi.vercel.app/"
+                target="_blank"
+                src={calculator}
+                title="Calculator App"
+                subtitle="NextJs & Tailwindcss"
+                icon="eye"
+            />
+            <Card
+                href="https://todo-list-frontend-gyjy2qeqh-safwanazman.vercel.app/"
                 target="_blank"
                 src={todo}
                 title="Todo List"
