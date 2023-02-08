@@ -299,8 +299,8 @@ function App() {
             <div className="container relative grid items-center justify-center grid-cols-12 gap-8 ">
               <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-12 xxl:col-span-12 ">
                 <h1 className="mb-4 text-4xl font-bold text-teal-200 myfont">MY <span className="text-white">PORTFOLIO</span></h1>
-                <div>
-                  <div className='overflow-x-auto '>
+                <div className="">
+                  <div className='overflow-x-auto'>
                     <div className="grid grid-cols-3 gap-2 mb-4 md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-2" style ={{ width : '28rem'}}>
                         <button className={tab === 1 ? 
                           'flex items-center justify-center p-4 space-x-2 text-white border-2 border-white rounded-md hover:bg-teal-200 bg-teal-200' :

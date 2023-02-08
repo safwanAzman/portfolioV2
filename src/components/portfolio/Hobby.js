@@ -3,22 +3,19 @@ import Card from '../Card';
 
 //work import
 import mycomponent from '../../assets/work/mycomponent.png';
-import room from '../../assets/work/homepage.png';
-import blogr from '../../assets/work/blogr.png';
-import snap from '../../assets/work/snap.png';
-import calculator from '../../assets/work/calculator.png';
 import todo from '../../assets/work/todo.png';
 import jomskate from '../../assets/work/jomskate.png';
+import frontendMentor from '../../assets/work/frontendMentor.png';
 
 export default function Hobby() {
     return (
         <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-2">
             <Card
-                href="https://frontend-mentor-room-home-page.vercel.app/"
+                href="https://www.frontendmentor.io/profile/safwanAzman"
                 target="_blank"
-                src={room}
-                title="Room Home Page"
-                subtitle="React & Tailwindcss"
+                src={frontendMentor}
+                title="My Challenge Solutions"
+                subtitle="Frontend Mentor"
                 icon="eye"
             />
             <Card
@@ -29,30 +26,7 @@ export default function Hobby() {
                 subtitle="Tailwindcss"
                 icon="eye"
             />
-            <Card
-                href="https://blogr-landing-page-pearl.vercel.app/"
-                target="_blank"
-                src={blogr}
-                title="Blogr Page"
-                subtitle="React & Tailwindcss"
-                icon="eye"
-            />
-            <Card
-                href="https://frontend-mentor-hero-section.vercel.app/"
-                target="_blank"
-                src={snap}
-                title="Snap Page"
-                subtitle="NextJs & Tailwindcss"
-                icon="eye"
-            />
-            <Card
-                href="https://calculator-app-eight-xi.vercel.app/"
-                target="_blank"
-                src={calculator}
-                title="Calculator App"
-                subtitle="NextJs & Tailwindcss"
-                icon="eye"
-            />
+            
             <Card
                 href="https://todo-list-frontend-gyjy2qeqh-safwanazman.vercel.app/"
                 target="_blank"
