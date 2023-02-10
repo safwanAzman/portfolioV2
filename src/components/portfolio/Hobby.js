@@ -36,7 +36,7 @@ export default function Hobby() {
                 icon="eye"
             />
             <Card
-                href="https://www.jomskate.tk/"
+                href="https://jom-skate-lp-safwanazman.vercel.app/"
                 target="_blank"
                 src={jomskate}
                 title="Jom Skate"
