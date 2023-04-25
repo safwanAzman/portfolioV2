@@ -6,6 +6,7 @@ import mycomponent from '../../assets/work/mycomponent.png';
 import todo from '../../assets/work/todo.png';
 import jomskate from '../../assets/work/jomskate.png';
 import frontendMentor from '../../assets/work/frontendMentor.png';
+import digitalcard from '../../assets/work/digitalcard.png';
 
 export default function Hobby() {
     return (
@@ -41,6 +42,15 @@ export default function Hobby() {
                 src={jomskate}
                 title="Jom Skate"
                 subtitle="Expo React Native"
+                icon="eye"
+            />
+
+            <Card
+                href="https://digital-card-pearl.vercel.app/"
+                target="_blank"
+                src={digitalcard}
+                title="Digital Card"
+                subtitle="Nextjs & Tailwindcss"
                 icon="eye"
             />
         </div>
