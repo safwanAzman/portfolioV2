@@ -10,6 +10,7 @@ import emandate from '../../assets/work/emandate.png';
 import arrahnu from '../../assets/work/arrahnu.png';
 import csctestkit from '../../assets/work/csctestkit.png';
 import crems from '../../assets/work/crems.png';
+import cces from '../../assets/work/cces.png';
 
 export default function Work() {
     return (
@@ -42,7 +43,7 @@ export default function Work() {
                 href="https://www.koputraonline.com.my/fms/"
                 target="_blank"
                 src={efms}
-                title="Cscorp"
+                title="FMS"
                 subtitle="Tall Stack"
                 icon="eye"
             />
@@ -59,6 +60,14 @@ export default function Work() {
                 target="_blank"
                 src={arrahnu}
                 title="Arrahnu"
+                subtitle="Tall Stack"
+                icon="eye"
+            />
+            <Card
+                href="https://cces.cscabs.net.my/"
+                target="_blank"
+                src={cces}
+                title="Cces"
                 subtitle="Tall Stack"
                 icon="eye"
             />
