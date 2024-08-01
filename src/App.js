@@ -15,7 +15,7 @@ import Bootstrap from './assets/skills/bootstrap.png';
 import Laravel from './assets/skills/laravel.png';
 import Reactjs from './assets/skills/react.png';
 import Livewire from './assets/skills/livewire.png';
-import Alpine from './assets/skills/alpinejs.svg';
+import Alpine from './assets/skills/alpinejs.png';
 
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
